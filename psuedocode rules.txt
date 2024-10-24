@@ -1,0 +1,12 @@
+rules of psuedocode
+
+psuedocode at least as defined in the video series doesn't have any defined rules
+I mean I'll go ahead and write some that I figure seem to be common rules but he pretty explicitly said that any rules that are defined for psuedocode are just the rules of whoever is doing that model of psuedocode
+
+make it easy to understand
+write in natural language
+has to have a start and an end
+indented as if it was a real program
+match variable case
+
+I don't know the last one I'm just kinda pulling from thin air here.
