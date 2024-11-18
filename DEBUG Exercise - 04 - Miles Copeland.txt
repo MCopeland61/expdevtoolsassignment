@@ -1,0 +1,39 @@
+// This pseudocode segment is intended to compute and display
+// the cost of home ownership for any number of users
+// The program ends when a user enters 0 for the mortgage payment
+start
+   Declarations
+      num mortgagePayment
+      num utilities
+      num taxes
+      num upkeep
+      num total
+   startup()
+   while mortgagePayment <> 0 //change not equal to to <> for readibility purposes
+      MainLoop()
+   endwhile
+   output "End of program" //read comment all the way at the bottom regarding why I commented out the function
+   //finishUp()
+end //changed to end since that's the standard we're working with
+
+startUp()
+   output "Enter your mortgage payment or 0 to quit"
+   input mortgagePayment //changed variable to match the name declared at the beginning
+return
+
+mainLoop()
+   output "Enter utilities"
+   input utilities
+   output "Enter taxes"
+   input taxes
+   output "Enter amount for upkeep"
+   input upkeep
+   total = mortgagePayment + utilities + taxes + upkeep
+   output "Total is ", total
+   startUp() //called startUp() because otherwise it loops back to utilities which isn't the intent of the program and would lead to the an infinite loop
+return
+
+//finishUp()
+//  output "End of program"
+//return
+//this might be a personal preference thing but I feel like it's fairly worthless to call a function that's only purpose is to output one line of dialogue and won't ever be called again. I'm commenting it out.
