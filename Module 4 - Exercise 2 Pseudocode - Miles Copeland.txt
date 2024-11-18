@@ -1,0 +1,20 @@
+start
+input wordToSearch
+currentWordPage = 1
+currentWord = dictionary(currentWordPage)
+foundWord = false
+pageModifier = 10
+while (foundWord = false) {
+	if (currentWord = wordToSearch) {
+		print "Found word at " + currentWordPage
+		foundWord = true
+	} else if (compare(currentWord, wordToSearch) < 0) {
+		print "Not far enough at page " + currentWordPage
+		currentWordPage = currentWordPage + pageModifier
+	} else if (compare(currentWord, wordToSearch) > 0) {
+		print "Too far at page " + currentWordPage
+		pageModifier - 1
+		currentWordPage = currentWordPage - pageModifier
+	}
+}
+end

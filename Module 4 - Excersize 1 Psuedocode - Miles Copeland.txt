@@ -1,0 +1,17 @@
+start
+actualNumber = random(100)
+numberGuessed = false
+guessNumber = 0
+while (numberGuessed = false) {
+	print "Hey you! Guess a number between 1-100."
+	input guessNumber
+	if (guessNumber = actualNumber) {
+		print "Nice job!"
+		numberGuessed = true
+	} else if (guessNumber < actualNumber) {
+		print "Too low..."
+	} else {
+		print "Too high!"
+	}
+}
+end
